@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 /**
  *  main - Entery point
  * Description: print alphabet in lowercase then in uppercase
@@ -17,10 +18,10 @@ int main(void)
 		ch++;
 	}
 	/* prints A - Z*/
-	while (ch <= 'Z')
+	while (CH <= 'Z')
 	{
 		putchar(CH);
-		ch++;
+		CH++;
 	}
 	putchar('\n');
 	return (0);
