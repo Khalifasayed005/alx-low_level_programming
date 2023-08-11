@@ -3,7 +3,7 @@
 /**
  * main - entry point
  * Description: print all aplhabet letters
- * Return: always0 (success)
+ * Return: always 0 (success)
 */
 int main(void)
 {
@@ -15,7 +15,7 @@ int main(void)
 		putchar(n);
 		n++;
 	}
-	while (m <= 98)
+	while (m <= 90)
 	{
 		putchar(m);
 	}
