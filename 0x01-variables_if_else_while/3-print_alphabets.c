@@ -2,7 +2,7 @@
 
 /**
  * main - entry point
- * Description: print all aplhabet letters
+ * Description: print all aplhabet letters except q and e
  * Return: always 0 (success)
 */
 int main(void)
