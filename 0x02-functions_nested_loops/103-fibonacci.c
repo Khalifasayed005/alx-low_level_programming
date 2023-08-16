@@ -2,10 +2,8 @@
 #include "main.h"
 
 /**
- * main - Entry point
- * Description: prints the sum of even valued
- * Fibonacci sequence not exceed
- * 4million 
+ * main - finds and prints the sum of the even-valued terms
+ * followed by a new line
  * Return: Always 0 (success)
 */
 
