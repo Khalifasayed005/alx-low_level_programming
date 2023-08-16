@@ -2,8 +2,9 @@
 #include "main.h"
 
 /**
- * main - Entry point
- * Return: Always 0 (success)
+ * main - fibonacci <3
+ * purpose - no hardcode
+ * Return: (success)
 */
 
 int main(void)
