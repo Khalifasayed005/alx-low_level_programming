@@ -2,7 +2,7 @@
 
 /**
  * print_diagonal - prints a diagonal line
- * @n: is the number of times the \ character printrd
+ * @n: is the number of times the \ character hould be rintrd
 */
 
 void print_diagonal(int n)
@@ -18,10 +18,10 @@ void print_diagonal(int n)
 
 		for (i = 0; i < n; i++)
 		{
-			for (j = 1; j < n; j++)
+			for (j = 0; j < n; j++)
 			{
 				if (j == i)
-				_putchar('\\');
+					_putchar('\\');
 				else if (j < i)
 					_putchar(' ');
 			}
