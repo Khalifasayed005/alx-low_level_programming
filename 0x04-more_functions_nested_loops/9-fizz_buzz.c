@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include "main.h"
 
 /**
  * main - prints numbers 1 - 100 followed by a new line
@@ -31,7 +30,6 @@ int main(void)
 		{
 			printf("%d", num);
 		}
-
 		else
 		{
 			printf(" %d", num);
