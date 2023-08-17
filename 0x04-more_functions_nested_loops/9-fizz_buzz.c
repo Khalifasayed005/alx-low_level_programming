@@ -16,11 +16,11 @@ int main(void)
 	for (num = 1; num <= 100; num++)
 	{
 		if (num % 3 == 0 && !(num % 5 == 0))
-			printf("fizz");
+			printf(" fizz");
 		else if (num % 5 == 0 && !(num % 3 == 0))
-			printf("Buzz");
+			printf(" Buzz");
 		else if (num % 3 == 0 && num % 5 == 0)
-			printf("fizzBuzz");
+			printf(" fizzBuzz");
 		else
 			printf("%d", num);
 
