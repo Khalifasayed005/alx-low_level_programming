@@ -15,20 +15,29 @@ int main(void)
 
 	for (num = 1; num <= 100; num++)
 	{
-		if (num % 3 == 0 && !(num % 5 == 0))
+		if (num % 3 == 0 && num % 5 != 0)
+		{
 			printf(" fizz");
-		else if (num % 5 == 0 && !(num % 3 == 0))
+		}
+		else if (num % 5 == 0 && num % 3 != 0)
+		{
 			printf(" Buzz");
+		}
 		else if (num % 3 == 0 && num % 5 == 0)
+		{
 			printf(" fizzBuzz");
-		else
+		}
+		else if (num == 1)
+		{
 			printf("%d", num);
+		}
 
-		if (num != 100)
-			printf(" ");
 		else
-		printf("\n");
+		{
+			printf(" %d", num);
+		}
 	}
+	printf("\n");
 	return (0);
 }
 
