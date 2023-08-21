@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
- * print_most_numbers - prints 0 - 9
- * apart from 2 and 4
- * Return: Always 0 (success)
+ * reset_to_98 - takes a pointer to an int as parameter and updates
+ * the value it points to to 98
+ * @n: int parameter
+ * Return: nothing
 */
 
 void reset_to_98(int *n)
