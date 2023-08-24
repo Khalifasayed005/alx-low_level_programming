@@ -15,7 +15,7 @@ int b;
 b = 0;
 while (b < n && src[b] != '\0')
 {
-dest[b] = src[b]
+dest[b] = src[b];
 b++;
 }
 while (b < n)
