@@ -6,14 +6,14 @@
  * Return: n
 */
 
-char *string_toupper(char *)
+char *string_toupper(char *n)
 {
 	int i;
 
 	i = 0;
 	while (n[i] != '\0')
 	{
-	while (n[1] >= 'a' && n[i] <= 'z')
+	while (n[i] >= 'a' && n[i] <= 'z')
 		n[i] = n[i] - 32;
 
 	i++;
