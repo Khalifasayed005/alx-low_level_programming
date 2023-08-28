@@ -18,5 +18,6 @@ for (a = 0; accept[a] != s[z]; a++)
 if (accept[a] == '\0';
 		return (z);
 }
+}
 return (z);
 }

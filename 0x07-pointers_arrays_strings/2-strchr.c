@@ -17,5 +17,6 @@ if (s[z] == c)
 {
 return (s + z);
 }
+}
 return ('\0');
 }
