@@ -9,15 +9,27 @@
 
 unsigned int _strspn(char *s, char *accept)
 {
-unsigned int z, a;
+unsigned int bytes = 0;
+int index;
 
-for (z = 0; s[z] != '\0'; z++)
+while (*s)
 {
-for (a = 0; accept[a] != s[z]; a++)
+
+for (index = 0; accept[index]; index++)
+
 {
-if (accept[a] == '\0')
-		return (z);
+if (*s == accept[index])
+{
+bytes++;
+break;
+
 }
+else if (accept[index + 1] == '\0')
+return (bytes);
 }
-return (z);
+
+s++;
+
+}
+return (bytes);
 }
