@@ -10,7 +10,8 @@
 
 char *_strpbrk(char *s, char *accept)
 {
-unsigned int z;
+unsigned int itr, jtr;
+char *p;
 
 itr = 0;
 while (accept[itr] != '\0')
@@ -27,4 +28,5 @@ jtr++;
 }
 jtr++;
 }
+return (0);
 }
