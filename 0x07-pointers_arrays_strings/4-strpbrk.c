@@ -10,23 +10,21 @@
 
 char *_strpbrk(char *s, char *accept)
 {
-unsigned int itr, jtr;
-char *p;
+int index;
 
-itr = 0;
-while (accept[itr] != '\0')
+while (*s)
+
 {
-jtr = 0;
-while (accept[jtr] != '\0')
+for (index = 0; accept[index]; index++)
 {
-if (accept[jtr] == s[itr])
-{
-p = &s[itr];
-return (p);
+if (*s == accept[index])
+return (s);
+
 }
-jtr++;
+
+s++;
+
 }
-jtr++;
-}
-return (0);
+
+return ('\0');
 }
