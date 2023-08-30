@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 /**
  * _strlen_recursion - returne the length of a string
  * @s: pointer the string
@@ -13,7 +14,7 @@ if (*s > '\0')
 
 {
 
-ntr += strlen recursion(s + 1) + 1;
+ntr += _strlen_recursion(s + 1) + 1;
 }
 return (ntr);
 }
