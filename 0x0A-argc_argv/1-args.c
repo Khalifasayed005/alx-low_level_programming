@@ -2,14 +2,14 @@
 
 /**
  * main - prints the argument
- * @argc: int
- * @argv: list
+ * @argc: number of command line argument
+ * @argv: pointer to an array
  * Return: 0-success, non-zero-fail
 */
 
-int main(int argc, char const *argv[])
+int main(int argc, char *argv[])
 {
 (void)argv;
-printf("%d\n", argc - 1]);
+printf("%d\n", argc - 1);
 return (0);
 }
