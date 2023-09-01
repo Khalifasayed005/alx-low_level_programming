@@ -1,9 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 /**
- * main - rints its name, followed by a new line
- * @argc: int
- * @argv: list
+ * main - that adds positive numbers
+ * @argc: number of argument
+ * @argv: array of pointer to argument
  * Return: 0
 */
 
