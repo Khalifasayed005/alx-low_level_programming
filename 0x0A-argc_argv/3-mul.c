@@ -1,3 +1,4 @@
+#include <stdlib.h>
 #include <stdio.h>
 
 /**
@@ -20,5 +21,7 @@ else
 {
 printf("Error\n");
 
+return (1);
+}
 return (0);
 }

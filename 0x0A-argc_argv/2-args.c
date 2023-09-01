@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+
 /**
  * main - rints its name, followed by a new line
  * @argc: int
@@ -13,7 +14,7 @@ int i = 0;
 while (argc--)
 {
 printf("%s\n", argv[i]);
-i++
+i++;
 }
 return (0);
 }
