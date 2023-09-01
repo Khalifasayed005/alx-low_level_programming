@@ -2,24 +2,25 @@
 #include <stdlib.h>
 
 /**
- * main - that adds positive numbers
- * @argc: number of argument
- * @argv: array of pointer to argument
- * Return: 0
+ * main - it all start here
+ * @argc: the number of arguments
+ * @argv: array of pointer to arguments
+ *
+ * Return: always 0.
 */
 
 int main(int argc, char *argv[])
 {       
-int n = 0;
+int sum = 0;
 char *c;
 
 while (--argc)
 {
 	for (c = argv[argc]; *c; c++)
-		if (*c < '0' )
+		if (*c < '0' || *c > '9')
 			return (printf("Error\n"), 1);
-	n += atoi(argv[argc]);
+	sum += atoi(argv[argc]);
 }
-	printf("%d\n", n);
+	printf("%d\n", sum);
 	return (0);
 }
