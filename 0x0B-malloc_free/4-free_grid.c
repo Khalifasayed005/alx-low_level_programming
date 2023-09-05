@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * free_grid - rees a 2 dimensional grid previously created 
+ * free_grid - rees a 2 dimensional grid previously created
  * @grid: grid of memories
  * @height: int
  * Return: void
