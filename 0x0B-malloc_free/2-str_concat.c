@@ -13,7 +13,7 @@ int z = 0;
 for (; s[z] != '\0'; z++)
 	;
 return (z);
-)
+}
 /**
  * *str_concat - concatenates two strings.
  * @s1: string 1
@@ -32,9 +32,10 @@ if (s2 == NULL)
 	s2 = "\0";
 z1 = _strlen(s1);
 z2 = _strlen(s2);
-m = malloc((z1 + z2) * size of(char) + 1);
+m = malloc((z1 + z2) *sizeof(char) + 1);
 if (m == 0)
 	return (NULL);
+
 for (i = 0; i <= z1 + z2; i++)
 {
 	if (i < z1)
