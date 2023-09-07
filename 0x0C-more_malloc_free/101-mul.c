@@ -26,7 +26,7 @@ int _atoi(const char *s)
 	int sign = 1;
 	unsigned long int resp = 0, firstNum, i;
 
-	for (firstNum = 0; !(s[firstNum] >= 48 && s[firstNum] <= 57); firstNum++)
+	for (firstNum = 0; (s[firstNum] >= 48 && s[firstNum] <= 57); firstNum++)
 	{
 		if (s[firstNum] == '-')
 		{
@@ -75,7 +75,7 @@ if (argc != 3)
 _puts("Error ");
 exit(98);
 }
-print_int(_atoi(argv[1]) * _atoi (argv[2]));
+print_int(_atoi(argv[1]) * _atoi(argv[2]));
 putchar('\n');
 
 return (0);
