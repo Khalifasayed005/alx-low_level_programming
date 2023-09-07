@@ -12,7 +12,7 @@ int i = 0;
 
 while (str[i])
 {
-putchar(str[i]);
+_putchar(str[i]);
 i++;
 }
 }
@@ -55,7 +55,7 @@ void print_int(unsigned long int n)
 	for (; divisor >= 1; n %= divisor, divisor /= 10)
 	{
 		resp = n / divisor;
-		putchar('0' + resp);
+		_putchar('0' + resp);
 	}
 }
 
@@ -76,7 +76,7 @@ _puts("Error ");
 exit(98);
 }
 print_int(_atoi(argv[1]) * _atoi(argv[2]));
-putchar('\n');
+_putchar('\n');
 
 return (0);
 }
