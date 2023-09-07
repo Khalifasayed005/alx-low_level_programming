@@ -23,6 +23,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	for (s1_length = 0; s1[s1_length] != '\0'; s1_length++)
 		;
+
 	for (s2_length = 0; s2[s2_length] != '\0'; s2_length++)
 		;
 	/*Mempry reservation-for case 1 & 2.*/
@@ -31,11 +32,13 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		return (NULL);
 	}
+	/*copy first string into str.*/
 	for (i = 0; s1[i] != '\0'; i++)
 		str[i] = s1[i];
+	/*copy second string into str.*/
 	for (j = 0; j < n; j++)
 	{
-		str[i] = s2[i];
+		str[i] = s2[j];
 		i++;
 	}
 
