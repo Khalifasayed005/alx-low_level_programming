@@ -4,6 +4,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+char *_memset(char *s, char b, unsigned int n);
+int main(int argc, char const *argv[]);
 int _putchar(char c);
 void _puts(char *str);
 void *malloc_checked(unsigned int b);
