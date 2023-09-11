@@ -5,7 +5,7 @@
  * @d: the dog toinit
  * @name: dog name
  * @age: dog age
- * @owner: owner na,e
+ * @owner: owner name
  *
  * Return: void
 */
@@ -16,6 +16,6 @@ if (d)
 {
 d->name = name;
 d->age = age;
-d->owner = owner
+d->owner = owner;
 	}
 }
