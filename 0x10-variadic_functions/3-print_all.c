@@ -27,7 +27,7 @@ printf("%s%d", separator, va_arg(ap, int));
 */
 void format_float(char *separator, va_list ap)
 {
-printf("%s%f", separator, va_arg(ap, int));
+printf("%s%f", separator, va_arg(ap, double));
 }
 
 /**
@@ -43,7 +43,7 @@ void format_string(char *separator, va_list ap)
 	case 1:
 		str = "(nil)";
 
-	printf("%s%S", separator, str);
+	printf("%s%s", separator, str);
 }
 /**
 * print_all -  prints anything
@@ -58,7 +58,7 @@ va_list ap;
 token_t tokens [] = {
 {"c", format_char},
 {"i", format_int},
-{"f", format_float}
+{"f", format_float},
 {"s", format_string},
 {NULL, NULL}
 };
@@ -67,12 +67,12 @@ va_start(ap, format);
 while (format && format[i])
 {
 j = 0;
-while (tokens [j].token)
+while (tokens[j].token)
 {
 if (format[i] == tokens[j].token[0])
 {
-tokens [j].f(separator, ap);
-separator = ", ":
+tokens[j].f(separator, ap);
+separator = ", ";
 }
 j++;
 }
