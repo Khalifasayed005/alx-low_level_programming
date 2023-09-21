@@ -2,7 +2,7 @@
 
 /**
 * add_node_end - adds a node to the end of the list
-* *@head: address of pointer to head node
+* @head: address of pointer to head node
 * @str: str field of node
 * Return: size of list
 */
