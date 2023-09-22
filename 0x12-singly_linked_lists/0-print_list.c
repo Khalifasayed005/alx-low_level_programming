@@ -2,7 +2,7 @@
 #include "lists.h"
 
 /**
-* strlen - returns the length of a string
+* _strlen - returns the length of a string
 * @s: the string whose length to check
 * Return: integer length of string
 */
