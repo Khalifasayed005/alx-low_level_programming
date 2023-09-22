@@ -20,5 +20,5 @@ printf("[%u] %s\n", h->len, h->str);
 h = h->next;
 i++;
 }
-return (s);
+return (i);
 }
