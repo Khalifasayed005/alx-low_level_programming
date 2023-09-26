@@ -11,7 +11,7 @@
 * Return: pointer to the new list
 */
 
-const listint_t _r(const listint_t list, size_t size, const istin_t *new)
+const listint_t **_r(const listint_t **list, size_t size, const listint_t *new)
 {
 const listint_t **newlist;
 size_t i;
@@ -27,6 +27,7 @@ newlist[i] = list[i];
 newlist[i] = new;
 free(list);
 return (newlist);
+}
 /**
  * print_listint_safe - print a listint linked list
  * @head: pointer to the start of list
@@ -35,7 +36,7 @@ return (newlist);
 size_t print_listint_safe(const listint_t *head)
 {
 size_t i, num = 0;
-const listint **list = NULL;
+const listint_t **list = NULL;
 
 while (head != NULL)
 {
@@ -48,10 +49,9 @@ free(list);
 return (num);
 }
 }
-
 num++;
 list = _r(list, num, head);
-printf("[%p] d\n", (void *)head, head->n);
+printf("[%p] %d\n", (void *)head, head->n);
 head = head->next;
 }
 free(list);
