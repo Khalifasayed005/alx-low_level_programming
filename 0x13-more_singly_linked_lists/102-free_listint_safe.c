@@ -28,7 +28,7 @@ return (NULL);
 /**
  * free_listint_safe - frees a listint_t list
  * @h : head of list
- * return: number of nodes freed
+ * Return: number of nodes freed
 */
 size_t free_listint_safe(listint_t **h)
 {
