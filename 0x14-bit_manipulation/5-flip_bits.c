@@ -17,7 +17,7 @@ while (xorval)
 
 if (xorval & 1ul)
 count++;
-xorval ^= xorval >> 1;
+xorval = xorval >> 1;
 }
 return (count);
 }
