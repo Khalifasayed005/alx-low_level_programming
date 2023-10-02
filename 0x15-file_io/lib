@@ -1,0 +1,4 @@
+lx-low_level_programming  alx-zero_day                   bin    dev   home  lib32  libx32  mnt    opt
+root@f0b0d3433690:/# cd alx-low_level_programming
+root@f0b0d3433690:/alx-low_level_programming# mkdir 0x15-file_io
+
