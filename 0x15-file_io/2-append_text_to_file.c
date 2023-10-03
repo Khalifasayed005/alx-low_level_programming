@@ -34,5 +34,5 @@ return (-1);
 if (len)
 bytes = write(fd, text_content, len);
 close(fd);
-return (bytes = len ? 1: -1);
+return (bytes = len ? 1 : -1);
 }

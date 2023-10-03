@@ -3,8 +3,8 @@
 
 
 /**
-
-* _strlen - returns the length of a string * @s: the string whose length to check
+* _strlen - returns the length of a string
+* @s: the string whose length to check
 * Return: integer length of string
 */
 
@@ -39,5 +39,5 @@ return (-1);
 if (len)
 bytes = write(fd, text_content, len);
 close(fd);
-return (bytes = len ? 1: -1);
+return (bytes = len ? 1 : -1);
 }
