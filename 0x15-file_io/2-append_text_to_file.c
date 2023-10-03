@@ -1,7 +1,7 @@
-i#include "main.h"
+#include "main.h"
 
 /**
-* strlen - returns the length of a string
+* _strlen - returns the length of a string
 * @s: the string whose length to check
 * Return: integer length of string
 */
@@ -26,7 +26,7 @@ int append_text_to_file(const char *filename, char *text_content)
 int fd;
 ssize_t bytes = 0, len = _strlen(text_content);
 
-if (Ifilename)
+if (!filename)
 return (-1);
 fd = open(filename, O_WRONLY | O_APPEND);
 if (fd == -1)
